@@ -1,0 +1,66 @@
+.nav{ /* horizontal menu bar */
+     background: linear-gradient(to bottom, #e1e1e1, rgb(208, 208, 208) );  /* gradient 
+                                                                      painting from top to bottom */ 
+     border-radius: 4px;/* roughen the corners of the panel */
+     height: 50px;  /* panel height (must be specified, since the panel is a regular block) */
+     padding-top: 0.1px; 
+     box-shadow: 5px 3px rgb(165, 165, 165);
+    }
+    
+    .nav .pt{ /* main menu items (the context selector is used) affects elements of the .pt class nested within elements with the /nav class */
+     background: linear-gradient(to bottom, #e3e3e3, rgb(239, 239, 239) );  
+     text-decoration: none; /* remove the underline */ 
+     font-size: 20px;  
+     text-align: center;  
+     display:block; /* display menu items in blocks */ 
+     float: left;   /* make blocks float */  
+     border-style: solid; 
+     border-width: 0 0.5px 0 0;
+     border-radius: 4px;
+     padding: 13px  35px;
+     margin: 0 1px;
+     color: black;
+     text-transform: uppercase; /* text in buttons is in upper case  */
+     font-weight: 700; 
+    
+}
+
+
+.nav  .pt:hover{  /*  change button background on hover  */
+ background:  linear-gradient(to  bottom,  rgb(204,  204,  204),  rgb(145,  145,  145) );
+}
+
+.nav  div{      /*  blocks containing drop-down windows are wrapped in a separate block element  */
+ font-size:  20px; 
+ text-align:  center; 
+ display:block; 
+ float:  left; 
+ position:  relative;  /*  necessary for drop-down blocks to work correctly (so that the nested drop-down block .drop (position:absolute) is positioned relative to this element)  */
+}
+
+.nav  div  .drop{  /*  block for nested menu items  */
+ position:  absolute; /*  taken out of the normal flow to display on top of other content if necessary  */ 
+ display:  none; 
+ top:100%; /*  We shift it relative to the top side by 100%, i.e. to the fullest heightsу*/  
+ left:0%;  
+} 
+
+  .drop_item{ /*  design of nested menu items in a block  .nav  div  .drop*/
+ text-decoration:  none;  
+ display:  block; 
+ background:  linear-gradient(to  bottom, #e3e3e3,  rgb(239,  239,  239)  );
+ color:  black;      
+ border-style:  solid;
+ border-width:  0  0.5px  0  0;
+ border-radius:  4px;
+ padding:  13px    35px;      
+  }
+
+.drop_item:hover{  /*  change submenu color on hover  */
+ background:  linear-gradient(to  bottom,  rgb(204,  204,  204),  rgb(145,  145,  145));
+  }
+.nav  div:hover  div{  /*  display a drop-down block on hover  */
+ 
+    display:  block;
+}
+

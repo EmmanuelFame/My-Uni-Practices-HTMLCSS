@@ -1,0 +1,53 @@
+/* Reset styling */
+
+  
+  .vertical-menu {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  .vertical-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .vertical-menu ul li {
+    position: relative;
+  }
+  
+  .vertical-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: burlywood;
+    border-bottom: 1px solid grey;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: blue;
+  }
+  
+  .vertical-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 200px; 
+    top: 0;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .vertical-menu .submenu a {
+    padding: 10px 15px;
+    border-bottom: none;
+  }
+  
+  .vertical-menu ul li:hover > .submenu {
+    display: block;
+  }
+  

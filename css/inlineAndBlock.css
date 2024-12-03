@@ -1,0 +1,15 @@
+.block{
+    background-color: bisque;
+    width: 80%;
+    height: 80px;
+    margin: 30px;
+    padding: 15px;
+
+}
+.fragment{
+    border: 1px solid brown;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 30px;
+}

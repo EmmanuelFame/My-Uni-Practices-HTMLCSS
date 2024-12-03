@@ -1,0 +1,20 @@
+h2{
+    color: blue;
+}
+h2{
+    color: green;
+}
+.headline{
+    color: orange;
+}
+#header{
+    color: fuchsia;
+}
+.content{
+color: brown;
+font-weight: 700;
+border: 1px solid brown; 
+}
+.content_header{
+    border: inherit; /*forced inheritance*/
+}
