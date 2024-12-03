@@ -2,7 +2,8 @@
 
   
   .vertical-menu {
-    width: 200px;
+    width: 20%;
+    min-width: 140px;
     background-color: #fff;
     border: 1px solid grey;
     border-radius: 5px;
@@ -33,7 +34,7 @@
   .vertical-menu .submenu {
     display: none;
     position: absolute;
-    left: 200px; 
+    left: 100%; 
     top: 0;
     background-color: white;
     border: 1px solid grey;

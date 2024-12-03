@@ -1,7 +1,7 @@
 .hh{
     color: red;
     position: relative;
-    width: 1000px;
+    width: auto;
     height: 60px;
     margin-bottom: 3px;
     align-items: center;
@@ -14,18 +14,60 @@
 }
 .menu{
     float: left;
+    
     margin-right: 7px;
-    width: 170px;
+    width: auto;
     background-color: rgb(176, 200, 218);
 }
 
 .menu_background{
     background-color: rgb(194, 217, 235);
     position: relative;
-    width: 1000px;
+    width: auto;
     height: 20px;
     align-items: center;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
     border-radius: 3%;
     box-shadow: 3px 3px 5px grey;
+}
+
+.right_block{
+    width: 15%;
+    min-width: 100px;
+    float: right;
+    margin: 10px;
+    background-color: aqua;
+    
+
+}
+
+.center_block{
+    
+    margin: 10px;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.left_block{
+    width: 15%;
+    min-width: 100px;
+    float: left;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.img{
+    width: 100px;
+    margin: 5px;
+    height: 100px;
+}
+
+.cover{
+    display: inline-block;
+}
+
+.img:hover{
+    
 }
